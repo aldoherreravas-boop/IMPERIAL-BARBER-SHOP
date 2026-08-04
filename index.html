@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Imperial Barber Shop - Tu mejor estilo con nosotros. Barbería profesional en Jr. Miguel Grau N° 687, Bagua Grande - Amazonas. Reserva tu cita al 916484051.">
-  <meta name="keywords" content="Barberia Bagua Grande, Imperial Barber Shop, Corte de cabello Bagua, Barba Bagua Grande, Barber Shop Amazonas">
-  <meta name="author" content="Imperial Barber Shop">
+  <meta name="description" content="Imperium Barber Shop - Estilo que te define. La mejor barbería profesional en Bagua Grande, Amazonas. Reserva tu cita al WhatsApp 916484051.">
+  <meta name="keywords" content="Imperium Barber Shop, Barberia Bagua Grande, Corte de cabello, Perfilado de barba, Afeitado tradicional, Tratamiento capilar">
+  <meta name="author" content="Imperium Barber Shop">
   
   <!-- Open Graph / Social Media -->
-  <meta property="og:title" content="IMPERIAL BARBER SHOP - Tu Mejor Estilo Con Nosotros">
-  <meta property="og:description" content="Servicios exclusivos de barbería, corte de cabello y barba en Bagua Grande, Amazonas. ¡Reserva por WhatsApp!">
+  <meta property="og:title" content="IMPERIUM BARBER SHOP - Estilo que te define">
+  <meta property="og:description" content="Cortes de precisión, perfilado de barba, tratamientos capilares y productos premium en Bagua Grande, Amazonas.">
   <meta property="og:type" content="website">
 
-  <title>IMPERIAL BARBER SHOP | Tu Mejor Estilo Con Nosotros</title>
+  <title>IMPERIUM BARBER SHOP | Estilo Que Te Define</title>
+
+  <!-- Favicon Logo -->
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
 
   <!-- Google Fonts & FontAwesome Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Custom Styles -->
@@ -28,32 +31,59 @@
   <!-- ==================== HEADER & NAVBAR ==================== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
+      <!-- 1. LOGO -->
       <a href="#inicio" class="brand-logo" id="nav-brand-logo">
-        <div class="crown-icon">
-          <i class="fa-solid fa-crown"></i>
-        </div>
-        <div>
-          <div class="brand-name">IMPERIAL <span class="text-gold">BARBER</span></div>
-          <div class="brand-tag">BAGUA GRANDE</div>
+        <img src="logo.svg" alt="Imperium Barber Shop Logo" class="brand-logo-img">
+        <div class="brand-text-box">
+          <div class="brand-name">IMPERIUM</div>
+          <div class="brand-subtext">— BARBER SHOP —</div>
+          <div class="brand-tag">BAGUA GRANDE - AMAZONAS</div>
         </div>
       </a>
 
+      <!-- 2. MENÚ DE NAVEGACIÓN -->
       <nav>
         <ul class="nav-menu" id="navMenu">
-          <li><a href="#inicio" class="nav-link active" id="nav-home">Inicio</a></li>
-          <li><a href="#servicios" class="nav-link" id="nav-services">Servicios & Precios</a></li>
-          <li><a href="#galeria" class="nav-link" id="nav-gallery">Galería</a></li>
-          <li><a href="#barberos" class="nav-link" id="nav-team">Barberos</a></li>
-          <li><a href="#reserva" class="nav-link" id="nav-booking">Reservar Cita</a></li>
-          <li><a href="#contacto" class="nav-link" id="nav-contact">Contacto</a></li>
+          <li><a href="#inicio" class="nav-link active" id="nav-home">INICIO</a></li>
+          <li><a href="#nosotros" class="nav-link" id="nav-about">NOSOTROS</a></li>
+          <li class="dropdown">
+            <a href="#servicios" class="nav-link" id="nav-services">
+              SERVICIOS <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#servicios" data-service-filter="corte">Corte de Cabello</a></li>
+              <li><a href="#servicios" data-service-filter="barba">Perfilado y Barba</a></li>
+              <li><a href="#servicios" data-service-filter="afeitado">Afeitado Tradicional</a></li>
+              <li><a href="#servicios" data-service-filter="color">Coloración de Cabello</a></li>
+              <li><a href="#servicios" data-service-filter="tratamiento">Tratamiento Capilar</a></li>
+              <li><a href="#productos">Productos Premium</a></li>
+            </ul>
+          </li>
+          <li><a href="#galeria" class="nav-link" id="nav-gallery">GALERÍA</a></li>
+          <li><a href="#productos" class="nav-link" id="nav-products">PRODUCTOS</a></li>
+          <li><a href="#contacto" class="nav-link" id="nav-contact">CONTACTO</a></li>
         </ul>
       </nav>
 
+      <!-- 3. REDES SOCIALES Y 4. BOTÓN RESERVA TU CITA -->
       <div class="nav-actions">
-        <a href="https://wa.me/51916484051?text=Hola%20Imperial%20Barber%20Shop,%20deseo%20consultar%20por%20una%20cita" target="_blank" class="btn btn-whatsapp" id="nav-whatsapp-btn">
-          <i class="fa-brands fa-whatsapp"></i>
-          <span>916484051</span>
-        </a>
+        <div class="header-socials">
+          <a href="https://www.facebook.com/Imperialbarbersho" target="_blank" rel="noopener noreferrer" title="Facebook" class="social-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/51916484051?text=Hola%20Imperium%20Barber%20Shop,%20deseo%20consultar%20por%20una%20cita" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="social-icon icon-wa">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <button class="btn btn-gold btn-reserva-nav" id="btn-reserva-nav">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>RESERVA TU CITA</span>
+        </button>
+
         <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú de navegación">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -61,196 +91,300 @@
     </div>
   </header>
 
-  <!-- ==================== HERO SECTION ==================== -->
-  <section class="hero" id="inicio">
-    <div class="hero-bg-accent"></div>
-    <div class="container hero-grid">
+  <!-- ==================== HERO CARRUSEL (5, 6) ==================== -->
+  <section class="hero-carousel" id="inicio">
+    <div class="carousel-container">
       
-      <div class="hero-content">
-        <div class="hero-badge">
-          <i class="fa-solid fa-location-dot"></i>
-          <span>Jr. Miguel Grau N° 687, Bagua Grande - Amazonas</span>
-        </div>
-
-        <h1 class="hero-title">IMPERIAL <br><span class="text-gradient">BARBER SHOP</span></h1>
-        
-        <p class="hero-slogan">"TU MEJOR ESTILO CON NOSOTROS"</p>
-        
-        <p class="hero-description">
-          Vive la experiencia de un cuidado masculino de primer nivel. Cortes modernos, fade de precisión, perfilado de barba con toalla caliente y atención VIP personalizada en pleno corazón de Bagua Grande.
-        </p>
-
-        <div class="hero-cta">
-          <a href="#reserva" class="btn btn-gold" id="hero-book-btn">
-            <i class="fa-solid fa-calendar-check"></i>
-            <span>Reservar Cita por WhatsApp</span>
-          </a>
-          <a href="#servicios" class="btn btn-outline" id="hero-services-btn">
-            <i class="fa-solid fa-scissors"></i>
-            <span>Ver Servicios y Precios</span>
-          </a>
-        </div>
-
-        <div class="hero-info-pills">
-          <div class="info-pill-item">
-            <i class="fa-brands fa-whatsapp text-gold"></i>
-            <span><strong>WhatsApp Directo:</strong> +51 916 484 051</span>
-          </div>
-          <div class="info-pill-item">
-            <i class="fa-solid fa-map-pin text-gold"></i>
-            <span><strong>Dirección:</strong> Jr. Miguel Grau N° 687, Bagua Grande</span>
-          </div>
-          <div class="info-pill-item">
-            <i class="fa-solid fa-clock text-gold"></i>
-            <span><strong>Horarios:</strong> Lun - Sáb: 9:00 AM - 9:00 PM | Dom: 10:00 AM - 6:00 PM</span>
+      <!-- Slide 1 -->
+      <div class="carousel-slide active" style="background-image: linear-gradient(to right, rgba(9, 10, 15, 0.95) 30%, rgba(9, 10, 15, 0.55) 70%), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1600&q=80');">
+        <div class="container hero-content-wrapper">
+          <div class="hero-text-content">
+            <h1 class="hero-title">ESTILO QUE <br><span class="text-gold-gradient">TE DEFINE</span></h1>
+            <p class="hero-subtitle">
+              Más que un corte, una experiencia. Calidad, precisión y estilo en cada detalle.
+            </p>
+            <div class="hero-buttons">
+              <a href="#servicios" class="btn btn-gold btn-hero">
+                <span>CONOCE NUESTROS SERVICIOS</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=jmgT0vpMHGU" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-hero" id="btn-play-video">
+                <i class="fa-solid fa-play"></i>
+                <span>VER VIDEO</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="hero-visual">
-        <div class="hero-visual-card">
-          <div class="visual-emblem">
-            <i class="fa-solid fa-scissors"></i>
-          </div>
-          <h3 class="hero-visual-title">Experiencia <span class="text-gold">Imperial</span></h3>
-          <p class="hero-visual-text">Especialistas en perfilar tu presencia con elegancia, precisión y el máximo confort.</p>
-          
-          <div class="stats-grid">
-            <div>
-              <div class="stat-number">100%</div>
-              <div class="stat-label">Profesional</div>
-            </div>
-            <div>
-              <div class="stat-number">4.9★</div>
-              <div class="stat-label">Calificación</div>
-            </div>
-            <div>
-              <div class="stat-number">+1000</div>
-              <div class="stat-label">Clientes</div>
+      <!-- Slide 2 -->
+      <div class="carousel-slide" style="background-image: linear-gradient(to right, rgba(9, 10, 15, 0.95) 30%, rgba(9, 10, 15, 0.55) 70%), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1600&q=80');">
+        <div class="container hero-content-wrapper">
+          <div class="hero-text-content">
+            <h1 class="hero-title">PRECISIÓN Y <br><span class="text-gold-gradient">ELEGANCIA</span></h1>
+            <p class="hero-subtitle">
+              Técnicas avanzadas de Fade, perfilado milimétrico y diseño exclusivo adaptado a tu rostro.
+            </p>
+            <div class="hero-buttons">
+              <a href="#reserva" class="btn btn-gold btn-hero">
+                <span>AGENDAR CITA AHORA</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <a href="#galeria" class="btn btn-outline-gold btn-hero">
+                <i class="fa-solid fa-images"></i>
+                <span>VER GALERÍA</span>
+              </a>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-slide" style="background-image: linear-gradient(to right, rgba(9, 10, 15, 0.95) 30%, rgba(9, 10, 15, 0.55) 70%), url('https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=1600&q=80');">
+        <div class="container hero-content-wrapper">
+          <div class="hero-text-content">
+            <h1 class="hero-title">RITUAL DE <br><span class="text-gold-gradient">BARBOTERAPIA</span></h1>
+            <p class="hero-subtitle">
+              Relájate con toallas calientes, aceites esenciales hidratantes y afeitado tradicional a navaja.
+            </p>
+            <div class="hero-buttons">
+              <a href="#servicios" class="btn btn-gold btn-hero">
+                <span>VER TRATAMIENTOS</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+              <a href="https://wa.me/51916484051?text=Hola%20Imperium%20Barber%20Shop,%20deseo%20información%20sobre%20Barboterapia" target="_blank" class="btn btn-whatsapp-hero btn-hero">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WHATSAPP 916484051</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-slide" style="background-image: linear-gradient(to right, rgba(9, 10, 15, 0.95) 30%, rgba(9, 10, 15, 0.55) 70%), url('https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=1600&q=80');">
+        <div class="container hero-content-wrapper">
+          <div class="hero-text-content">
+            <h1 class="hero-title">PRODUCTOS <br><span class="text-gold-gradient">PREMIUM</span></h1>
+            <p class="hero-subtitle">
+              Mantiene tu estilo impecable todos los días con nuestra línea profesional de barbería.
+            </p>
+            <div class="hero-buttons">
+              <a href="#productos" class="btn btn-gold btn-hero">
+                <span>VER PRODUCTOS</span>
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. FLECHAS DEL CARRUSEL -->
+      <button class="carousel-arrow carousel-arrow-left" id="carousel-prev" aria-label="Slide anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="carousel-arrow carousel-arrow-right" id="carousel-next" aria-label="Slide siguiente">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <!-- 6. INDICADORES DEL CARRUSEL -->
+      <div class="carousel-indicators" id="carousel-indicators">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
       </div>
 
     </div>
   </section>
 
-  <!-- ==================== SERVICIOS & PRECIOS ==================== -->
+  <!-- ==================== 7. SECCIÓN DE SERVICIOS ==================== -->
   <section class="services-section" id="servicios">
     <div class="container">
       
-      <div class="section-header">
-        <span class="section-subtitle">Nuestra Carta de Servicios</span>
-        <h2 class="section-title">CORTES & <span class="text-gold">TRATAMIENTOS</span></h2>
-        <div class="section-divider">
-          <i class="fa-solid fa-crown"></i>
+      <div class="section-header text-center">
+        <h2 class="section-main-title">NUESTROS SERVICIOS</h2>
+        <div class="section-accent-line">
+          <span class="line"></span>
+          <span class="subtitle-tag">CUIDAMOS TU ESTILO</span>
+          <span class="line"></span>
         </div>
       </div>
 
-      <div class="services-filter">
-        <button class="filter-btn active" data-filter="all">Todos los Servicios</button>
-        <button class="filter-btn" data-filter="corte">Cortes</button>
-        <button class="filter-btn" data-filter="barba">Barba & Faciales</button>
-        <button class="filter-btn" data-filter="combo">Combos Imperiales</button>
-      </div>
-
-      <div class="services-grid">
+      <div class="services-grid-main">
         
-        <!-- Servicio 1 -->
-        <div class="service-card featured" data-category="corte">
-          <span class="featured-badge">Más Popular</span>
-          <div class="service-header">
-            <div class="service-icon">
+        <!-- 7.1 CORTE DE CABELLO -->
+        <div class="service-box" data-service-id="corte-cabello">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80" alt="Corte de Cabello" loading="lazy">
+            <div class="service-icon-badge">
               <i class="fa-solid fa-scissors"></i>
             </div>
-            <div class="service-price">S/ 25.00</div>
           </div>
-          <h3 class="service-title">Corte Imperial Clásico</h3>
-          <p class="service-desc">Corte de cabello personalizado (Fade, Mid Fade, Tape, Clasico), lavado anticaspa, peinado con pomada premium y acabado con navaja.</p>
-          <div class="service-footer">
-            <span class="service-duration"><i class="fa-regular fa-clock"></i> 40 min</span>
-            <a href="#reserva" class="btn btn-outline btn-quick-book" data-service="Corte Imperial Clásico">Agendar</a>
-          </div>
-        </div>
-
-        <!-- Servicio 2 -->
-        <div class="service-card featured" data-category="combo">
-          <span class="featured-badge">Recomendado</span>
-          <div class="service-header">
-            <div class="service-icon">
-              <i class="fa-solid fa-crown"></i>
-            </div>
-            <div class="service-price">S/ 40.00</div>
-          </div>
-          <h3 class="service-title">Corte + Barba Premium</h3>
-          <p class="service-desc">Nuestro combo estrella: Corte de cabello a elección + perfilado de barba con ritual de toalla caliente y aceites hidratantes.</p>
-          <div class="service-footer">
-            <span class="service-duration"><i class="fa-regular fa-clock"></i> 60 min</span>
-            <a href="#reserva" class="btn btn-outline btn-quick-book" data-service="Corte + Barba Premium">Agendar</a>
+          <div class="service-box-body">
+            <h3 class="service-box-title">CORTE DE CABELLO</h3>
+            <p class="service-box-desc">Clásico y moderno adaptado a tu estilo.</p>
+            <button class="service-more-btn" data-service-name="CORTE DE CABELLO" data-price="S/ 25.00" data-desc="Incluye asesoría de imagen, degradado o corte tradicional, lavado anticaspa y peinado con cera profesional.">
+              Más información <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
         </div>
 
-        <!-- Servicio 3 -->
-        <div class="service-card" data-category="barba">
-          <div class="service-header">
-            <div class="service-icon">
+        <!-- 7.2 PERFILADO Y BARBA -->
+        <div class="service-box" data-service-id="perfilado-barba">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80" alt="Perfilado y Barba" loading="lazy">
+            <div class="service-icon-badge">
               <i class="fa-solid fa-user-ninja"></i>
             </div>
-            <div class="service-price">S/ 20.00</div>
           </div>
-          <h3 class="service-title">Barboterapia & Toalla Caliente</h3>
-          <p class="service-desc">Ritual relajante para la barba con tratamiento de vapor de ozono, aceites esenciales, perfilado a navaja y masaje facial.</p>
-          <div class="service-footer">
-            <span class="service-duration"><i class="fa-regular fa-clock"></i> 30 min</span>
-            <a href="#reserva" class="btn btn-outline btn-quick-book" data-service="Barboterapia & Toalla Caliente">Agendar</a>
-          </div>
-        </div>
-
-        <!-- Servicio 4 -->
-        <div class="service-card" data-category="combo">
-          <div class="service-header">
-            <div class="service-icon">
-              <i class="fa-solid fa-gem"></i>
-            </div>
-            <div class="service-price">S/ 55.00</div>
-          </div>
-          <h3 class="service-title">Combo Rey Imperial</h3>
-          <p class="service-desc">Servicio VIP completo: Corte de cabello + Barboterapia + Exfoliación facial hidro-reparadora + Bebida de cortesía.</p>
-          <div class="service-footer">
-            <span class="service-duration"><i class="fa-regular fa-clock"></i> 75 min</span>
-            <a href="#reserva" class="btn btn-outline btn-quick-book" data-service="Combo Rey Imperial">Agendar</a>
+          <div class="service-box-body">
+            <h3 class="service-box-title">PERFILADO Y BARBA</h3>
+            <p class="service-box-desc">Definimos y cuidamos tu barba.</p>
+            <button class="service-more-btn" data-service-name="PERFILADO Y BARBA" data-price="S/ 20.00" data-desc="Diseño y perfilado simétrico de barba con navaja, alineación de contornos y bálsamo hidratante.">
+              Más información <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
         </div>
 
-        <!-- Servicio 5 -->
-        <div class="service-card" data-category="barba">
-          <div class="service-header">
-            <div class="service-icon">
-              <i class="fa-solid fa-wand-magic-sparkles"></i>
+        <!-- 7.3 AFEITADO TRADICIONAL -->
+        <div class="service-box" data-service-id="afeitado-tradicional">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Afeitado Tradicional" loading="lazy">
+            <div class="service-icon-badge">
+              <i class="fa-solid fa-spa"></i>
             </div>
-            <div class="service-price">S/ 30.00</div>
           </div>
-          <h3 class="service-title">Camuflaje de Canas / Tinte</h3>
-          <p class="service-desc">Pigmentación natural para rejuvenecer y disimular las canas de barba o cabello con un acabado limpio y uniforme.</p>
-          <div class="service-footer">
-            <span class="service-duration"><i class="fa-regular fa-clock"></i> 40 min</span>
-            <a href="#reserva" class="btn btn-outline btn-quick-book" data-service="Camuflaje de Canas / Tinte">Agendar</a>
+          <div class="service-box-body">
+            <h3 class="service-box-title">AFEITADO TRADICIONAL</h3>
+            <p class="service-box-desc">Afeitado clásico con navaja y toalla caliente.</p>
+            <button class="service-more-btn" data-service-name="AFEITADO TRADICIONAL" data-price="S/ 25.00" data-desc="Ritual completo de afeitado al estilo antiguo con espuma caliente, toalla humectante y masaje facial.">
+              Más información <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
         </div>
 
-        <!-- Servicio 6 -->
-        <div class="service-card" data-category="corte">
-          <div class="service-header">
-            <div class="service-icon">
-              <i class="fa-solid fa-child"></i>
+        <!-- 7.4 COLORACIÓN DE CABELLO -->
+        <div class="service-box" data-service-id="coloracion-cabello">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Coloración de Cabello" loading="lazy">
+            <div class="service-icon-badge">
+              <i class="fa-solid fa-spray-can"></i>
             </div>
-            <div class="service-price">S/ 20.00</div>
           </div>
-          <h3 class="service-title">Corte Imperial Niños</h3>
-          <p class="service-desc">Atención paciente y dedicada para niños menores de 12 años con diseños modernos y peinado divertido.</p>
-          <div class="service-footer">
-            <span class="service-duration"><i class="fa-regular fa-clock"></i> 30 min</span>
-            <a href="#reserva" class="btn btn-outline btn-quick-book" data-service="Corte Imperial Niños">Agendar</a>
+          <div class="service-box-body">
+            <h3 class="service-box-title">COLORACIÓN DE CABELLO</h3>
+            <p class="service-box-desc">Dale color y estilo a tu personalidad.</p>
+            <button class="service-more-btn" data-service-name="COLORACIÓN DE CABELLO" data-price="S/ 35.00" data-desc="Camuflaje de canas, tintura completa o mechas modernas con productos profesionales sin amoníaco.">
+              Más información <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 7.5 TRATAMIENTO CAPILAR -->
+        <div class="service-box" data-service-id="tratamiento-capilar">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=600&q=80" alt="Tratamiento Capilar" loading="lazy">
+            <div class="service-icon-badge">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+          <div class="service-box-body">
+            <h3 class="service-box-title">TRATAMIENTO CAPILAR</h3>
+            <p class="service-box-desc">Hidratación profunda para un cabello sano.</p>
+            <button class="service-more-btn" data-service-name="TRATAMIENTO CAPILAR" data-price="S/ 30.00" data-desc="Tratamiento anticaída, hidratación intensiva y exfoliación capilar para revitalizar tu cuero cabelludo.">
+              Más información <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 7.6 PRODUCTOS PREMIUM -->
+        <div class="service-box" data-service-id="productos-premium">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=600&q=80" alt="Productos Premium" loading="lazy">
+            <div class="service-icon-badge">
+              <i class="fa-solid fa-jar"></i>
+            </div>
+          </div>
+          <div class="service-box-body">
+            <h3 class="service-box-title">PRODUCTOS PREMIUM</h3>
+            <p class="service-box-desc">Productos de calidad para tu cuidado diario.</p>
+            <button class="service-more-btn" data-service-name="PRODUCTOS PREMIUM" data-price="Desde S/ 25.00" data-desc="Pomadas mate, aceites para barba, tónicos anticaída y lociones para después del afeitado.">
+              Más información <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 8. LLAMADA A LA ACCIÓN (AGENDA TU CITA) ==================== -->
+  <section class="cta-booking-section">
+    <div class="container">
+      <div class="cta-booking-banner">
+        <div class="cta-banner-left">
+          <div class="cta-icon-circle">
+            <i class="fa-regular fa-calendar-days"></i>
+          </div>
+          <div class="cta-banner-text">
+            <h3>AGENDA TU CITA</h3>
+            <p>Evita esperas y asegura tu horario con nuestros barberos expertos.</p>
+          </div>
+        </div>
+        <div class="cta-banner-right">
+          <button class="btn btn-gold btn-lg" id="btn-reservar-ahora">
+            <span>RESERVAR AHORA</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 9. BENEFICIOS / CARACTERÍSTICAS ==================== -->
+  <section class="benefits-section">
+    <div class="container">
+      <div class="benefits-grid">
+        
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <div class="benefit-content">
+            <h4>PUNTUALIDAD</h4>
+            <p>Tu tiempo es importante.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div class="benefit-content">
+            <h4>EXPERTOS</h4>
+            <p>Barberos profesionales.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="benefit-content">
+            <h4>CALIDAD</h4>
+            <p>Experiencia y resultados únicos.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fa-solid fa-water"></i>
+          </div>
+          <div class="benefit-content">
+            <h4>HIGIENE</h4>
+            <p>Ambiente limpio y seguro.</p>
           </div>
         </div>
 
@@ -258,382 +392,398 @@
     </div>
   </section>
 
-  <!-- ==================== GALERIA DE ESTILOS ==================== -->
+  <!-- ==================== SECCIÓN NOSOTROS ==================== -->
+  <section class="about-section" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-column">
+          <div class="about-img-frame">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Imperium Barber Shop Local" loading="lazy">
+            <div class="about-experience-badge">
+              <span class="num">+5</span>
+              <span class="txt">Años de Excelencia</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-column">
+          <span class="subtitle-gold">SOBRE NOSOTROS</span>
+          <h2 class="about-title">LA MEJOR EXPERIENCIA DE BARBERÍA EN BAGUA GRANDE</h2>
+          <p class="about-desc">
+            En <strong>IMPERIUM BARBER SHOP</strong> nos apasiona el arte de la barbería clásica y moderna. Creado para el hombre que valora su imagen, ofrecemos un ambiente exclusivo, cómodo y con la mejor atención personalizada.
+          </p>
+          <ul class="about-highlights">
+            <li><i class="fa-solid fa-check-double"></i> Sillones hidráulicos VIP ultra cómodos</li>
+            <li><i class="fa-solid fa-check-double"></i> Herramientas esterilizadas de última generación</li>
+            <li><i class="fa-solid fa-check-double"></i> Bebida de cortesía y atención personalizada</li>
+          </ul>
+          <div class="about-cta-box">
+            <a href="https://wa.me/51916484051?text=Hola%20Imperium%20Barber%20Shop,%20quisiera%20saber%20más%20de%20sus%20servicios" target="_blank" class="btn btn-gold">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>CONSULTAR POR WHATSAPP</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECCIÓN GALERÍA ==================== -->
   <section class="gallery-section" id="galeria">
     <div class="container">
-      
-      <div class="section-header">
-        <span class="section-subtitle">Nuestra Galería</span>
-        <h2 class="section-title">ESTILOS & <span class="text-gold">TENDENCIAS</span></h2>
-        <div class="section-divider">
-          <i class="fa-solid fa-crown"></i>
+      <div class="section-header text-center">
+        <h2 class="section-main-title">GALERÍA DE ESTILOS</h2>
+        <div class="section-accent-line">
+          <span class="line"></span>
+          <span class="subtitle-tag">NUESTROS TRABAJOS RECIENTES</span>
+          <span class="line"></span>
         </div>
       </div>
 
       <div class="gallery-grid">
-        
-        <div class="gallery-card">
-          <div class="gallery-card-graphic">
-            <i class="fa-solid fa-user-ninja"></i>
-            <h3>SKIN FADE & BEARD</h3>
-          </div>
-          <div class="gallery-overlay">
-            <span class="gallery-tag">Especialidad</span>
-            <h4 class="gallery-title">Mid Skin Fade + Perfilado Imperial</h4>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80" alt="Mid Skin Fade" loading="lazy">
+          <div class="gallery-hover-overlay">
+            <h4>Mid Skin Fade</h4>
+            <p>Degradado de alta precisión</p>
           </div>
         </div>
 
-        <div class="gallery-card">
-          <div class="gallery-card-graphic">
-            <i class="fa-solid fa-scissors"></i>
-            <h3>EXECUTIVE CROP</h3>
-          </div>
-          <div class="gallery-overlay">
-            <span class="gallery-tag">Estilo Elegante</span>
-            <h4 class="gallery-title">Texturizado con Tijera</h4>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80" alt="Perfilado de Barba" loading="lazy">
+          <div class="gallery-hover-overlay">
+            <h4>Beard Sculpting</h4>
+            <p>Perfilado con toalla caliente</p>
           </div>
         </div>
 
-        <div class="gallery-card">
-          <div class="gallery-card-graphic">
-            <i class="fa-solid fa-crown"></i>
-            <h3>BEARD THERAPY</h3>
-          </div>
-          <div class="gallery-overlay">
-            <span class="gallery-tag">Cuidados</span>
-            <h4 class="gallery-title">Toalla Caliente & Navaja</h4>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Executive Crop" loading="lazy">
+          <div class="gallery-hover-overlay">
+            <h4>Executive Crop</h4>
+            <p>Estilo texturizado con tijera</p>
           </div>
         </div>
 
-        <div class="gallery-card">
-          <div class="gallery-card-graphic">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-            <h3>HAIR ART DESIGN</h3>
-          </div>
-          <div class="gallery-overlay">
-            <span class="gallery-tag">Urbano</span>
-            <h4 class="gallery-title">Líneas y Freestyles</h4>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=600&q=80" alt="Hair Design" loading="lazy">
+          <div class="gallery-hover-overlay">
+            <h4>Freestyle Design</h4>
+            <p>Líneas y cortes urbanos</p>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
 
-  <!-- ==================== NUESTROS BARBEROS ==================== -->
-  <section class="team-section" id="barberos">
+  <!-- ==================== SECCIÓN PRODUCTOS ==================== -->
+  <section class="products-section" id="productos">
     <div class="container">
-      
-      <div class="section-header">
-        <span class="section-subtitle">Equipo de Especialistas</span>
-        <h2 class="section-title">MAESTROS <span class="text-gold">BARBEROS</span></h2>
-        <div class="section-divider">
-          <i class="fa-solid fa-crown"></i>
+      <div class="section-header text-center">
+        <h2 class="section-main-title">PRODUCTOS DESTACADOS</h2>
+        <div class="section-accent-line">
+          <span class="line"></span>
+          <span class="subtitle-tag">CUIDADO MASCULINO PROFESIONAL</span>
+          <span class="line"></span>
         </div>
       </div>
 
-      <div class="team-grid">
-        
-        <div class="barber-card">
-          <div class="barber-avatar">
-            <div class="barber-avatar-inner">
-              <i class="fa-solid fa-user-tie"></i>
+      <div class="products-grid">
+        <!-- Producto 1 -->
+        <div class="product-card">
+          <div class="product-badge">Top Ventas</div>
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=500&q=80" alt="Pomada Fijación Mate" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h4 class="product-title">Pomada Mate Efeito Natural</h4>
+            <p class="product-desc">Fijación fuerte y acabado mate sin residuos grasos.</p>
+            <div class="product-price-row">
+              <span class="product-price">S/ 35.00</span>
+              <a href="https://wa.me/51916484051?text=Hola%20Imperium%20Barber%20Shop,%20deseo%20comprar%20la%20Pomada%20Mate" target="_blank" class="btn btn-sm btn-gold">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
             </div>
           </div>
-          <h3 class="barber-name">Carlos "El Rey"</h3>
-          <div class="barber-role">Master Barber & Founder</div>
-          <p class="barber-spec">Especialista en cortes clásicos imperiales, perfilados a navaja y asesoría de imagen masculina.</p>
         </div>
 
-        <div class="barber-card">
-          <div class="barber-avatar">
-            <div class="barber-avatar-inner">
-              <i class="fa-solid fa-scissors"></i>
+        <!-- Producto 2 -->
+        <div class="product-card">
+          <div class="product-badge">Recomendado</div>
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=500&q=80" alt="Aceite de Barba Orgánico" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h4 class="product-title">Aceite Hidratante para Barba</h4>
+            <p class="product-desc">Nutre la piel, suaviza el vello y otorga un aroma masculino premium.</p>
+            <div class="product-price-row">
+              <span class="product-price">S/ 30.00</span>
+              <a href="https://wa.me/51916484051?text=Hola%20Imperium%20Barber%20Shop,%20deseo%20comprar%20el%20Aceite%20para%20Barba" target="_blank" class="btn btn-sm btn-gold">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
             </div>
           </div>
-          <h3 class="barber-name">Mateo Fade</h3>
-          <div class="barber-role">Fade & Design Specialist</div>
-          <p class="barber-spec">Experto en degradados milimétricos (Skin Fade, Taper Fade) y diseños urbanos contemporáneos.</p>
         </div>
 
-        <div class="barber-card">
-          <div class="barber-avatar">
-            <div class="barber-avatar-inner">
-              <i class="fa-solid fa-sparkles"></i>
+        <!-- Producto 3 -->
+        <div class="product-card">
+          <div class="product-img-box">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=500&q=80" alt="Champú Anticaspa Fortificante" loading="lazy">
+          </div>
+          <div class="product-info">
+            <h4 class="product-title">Champú Anticaspa & Caída</h4>
+            <p class="product-desc">Formulado con mentol y extractos botánicos estimulantes.</p>
+            <div class="product-price-row">
+              <span class="product-price">S/ 40.00</span>
+              <a href="https://wa.me/51916484051?text=Hola%20Imperium%20Barber%20Shop,%20deseo%20comprar%20el%20Champ%C3%BA%20Anticaspa" target="_blank" class="btn btn-sm btn-gold">
+                <i class="fa-brands fa-whatsapp"></i> Comprar
+              </a>
             </div>
           </div>
-          <h3 class="barber-name">Luis Spa</h3>
-          <div class="barber-role">Barboterapeuta & Groomer</div>
-          <p class="barber-spec">Especialista en tratamiento de toalla caliente, hidratación de barba y limpieza exfoliante facial.</p>
         </div>
-
       </div>
 
     </div>
   </section>
 
-  <!-- ==================== AGENDAR CITA / RESERVA WHATSAPP ==================== -->
+  <!-- ==================== SECCIÓN AGENDAR CITA (FORMULARIO RESERVA) ==================== -->
   <section class="booking-section" id="reserva">
     <div class="container">
-      
-      <div class="booking-wrapper">
-        
-        <div class="booking-info">
-          <div class="booking-info-header">
-            <span class="section-subtitle">Reserva Fácil & Rápida</span>
-            <h2 class="section-title">AGENDA TU <span class="text-gold">CITA EN LÍNEA</span></h2>
-            <p style="color: var(--text-muted); margin-top: 0.8rem;">
-              Selecciona tu servicio, fecha y hora preferida. Nuestro sistema preparará la reserva directa a nuestro WhatsApp <strong>916484051</strong> para confirmarte de inmediato.
-            </p>
-          </div>
-
-          <div class="booking-feature-list">
-            <div class="booking-feature-item">
-              <div class="booking-feature-icon">
-                <i class="fa-solid fa-bolt"></i>
-              </div>
-              <div>
-                <h4 style="font-size: 1.05rem;">Confirmación Inmediata</h4>
-                <p style="font-size: 0.9rem; color: var(--text-muted);">Sin esperas en el local, tu sillón te estará esperando.</p>
-              </div>
-            </div>
-
-            <div class="booking-feature-item">
-              <div class="booking-feature-icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div>
-                <h4 style="font-size: 1.05rem;">Ubicación Céntrica</h4>
-                <p style="font-size: 0.9rem; color: var(--text-muted);">Jr. Miguel Grau N° 687, Bagua Grande - Amazonas.</p>
-              </div>
-            </div>
-
-            <div class="booking-feature-item">
-              <div class="booking-feature-icon">
-                <i class="fa-brands fa-whatsapp"></i>
-              </div>
-              <div>
-                <h4 style="font-size: 1.05rem;">Atención Directa</h4>
-                <p style="font-size: 0.9rem; color: var(--text-muted);">Respondes directamente con nuestro equipo al 916484051.</p>
-              </div>
-            </div>
-          </div>
+      <div class="booking-card-main">
+        <div class="booking-header">
+          <h2>RESERVA TU CITA EN LÍNEA</h2>
+          <p>Selecciona tu servicio y hora preferida para coordinar directo por WhatsApp <strong>916484051</strong>.</p>
         </div>
 
-        <div class="booking-form-card">
-          <form id="bookingForm">
-            
+        <form id="bookingForm" class="booking-form">
+          <div class="form-row">
             <div class="form-group">
-              <label class="form-label" for="bookingName">Tu Nombre Completo *</label>
+              <label for="bookingName">Nombre Completo *</label>
               <input type="text" id="bookingName" class="form-control" placeholder="Ej. Juan Pérez" required>
             </div>
-
             <div class="form-group">
-              <label class="form-label" for="bookingPhone">Teléfono de Contacto</label>
+              <label for="bookingPhone">Teléfono de Contacto</label>
               <input type="tel" id="bookingPhone" class="form-control" placeholder="Ej. 916484051">
             </div>
+          </div>
 
+          <div class="form-row">
             <div class="form-group">
-              <label class="form-label" for="bookingService">Selecciona el Servicio *</label>
+              <label for="bookingService">Servicio Deseado *</label>
               <select id="bookingService" class="form-control" required>
-                <option value="Corte Imperial Clásico (S/ 25.00)">Corte Imperial Clásico (S/ 25.00)</option>
-                <option value="Corte + Barba Premium (S/ 40.00)">Corte + Barba Premium (S/ 40.00)</option>
-                <option value="Barboterapia & Toalla Caliente (S/ 20.00)">Barboterapia & Toalla Caliente (S/ 20.00)</option>
-                <option value="Combo Rey Imperial (S/ 55.00)">Combo Rey Imperial (S/ 55.00)</option>
-                <option value="Camuflaje de Canas / Tinte (S/ 30.00)">Camuflaje de Canas / Tinte (S/ 30.00)</option>
-                <option value="Corte Imperial Niños (S/ 20.00)">Corte Imperial Niños (S/ 20.00)</option>
+                <option value="Corte de Cabello (S/ 25.00)">Corte de Cabello (S/ 25.00)</option>
+                <option value="Perfilado y Barba (S/ 20.00)">Perfilado y Barba (S/ 20.00)</option>
+                <option value="Afeitado Tradicional (S/ 25.00)">Afeitado Tradicional (S/ 25.00)</option>
+                <option value="Coloración de Cabello (S/ 35.00)">Coloración de Cabello (S/ 35.00)</option>
+                <option value="Tratamiento Capilar (S/ 30.00)">Tratamiento Capilar (S/ 30.00)</option>
+                <option value="Combo Imperial (Corte + Barba S/ 40.00)">Combo Imperial (Corte + Barba S/ 40.00)</option>
               </select>
             </div>
-
             <div class="form-group">
-              <label class="form-label" for="bookingBarber">Barbero Preferido</label>
+              <label for="bookingBarber">Barbero de Preferencia</label>
               <select id="bookingBarber" class="form-control">
                 <option value="Cualquier Barbero Disponible">Cualquier Barbero Disponible</option>
-                <option value="Carlos 'El Rey' (Master Barber)">Carlos "El Rey" (Master Barber)</option>
-                <option value="Mateo Fade (Fade & Designs)">Mateo Fade (Fade & Designs)</option>
-                <option value="Luis Spa (Barboterapia)">Luis Spa (Barboterapia)</option>
+                <option value="Master Barber Carlos">Master Barber Carlos</option>
+                <option value="Especialista Mateo">Especialista Mateo Fade</option>
+                <option value="Barboterapeuta Luis">Barboterapeuta Luis</option>
               </select>
             </div>
+          </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-              <div class="form-group">
-                <label class="form-label" for="bookingDate">Fecha *</label>
-                <input type="date" id="bookingDate" class="form-control" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="bookingTime">Hora Preferida *</label>
-                <input type="time" id="bookingTime" class="form-control" required>
-              </div>
-            </div>
-
+          <div class="form-row">
             <div class="form-group">
-              <label class="form-label" for="bookingNotes">Comentarios Adicionales (Opcional)</label>
-              <textarea id="bookingNotes" class="form-control" rows="2" placeholder="Ej. Deseo un degradado bajo..."></textarea>
+              <label for="bookingDate">Fecha *</label>
+              <input type="date" id="bookingDate" class="form-control" required>
             </div>
+            <div class="form-group">
+              <label for="bookingTime">Hora Preferida *</label>
+              <input type="time" id="bookingTime" class="form-control" required>
+            </div>
+          </div>
 
-            <button type="submit" class="btn btn-gold" style="width: 100%; padding: 1rem;" id="submit-booking-btn">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>Enviar Reserva a WhatsApp</span>
-            </button>
+          <div class="form-group">
+            <label for="bookingNotes">Comentarios u observaciones</label>
+            <textarea id="bookingNotes" class="form-control" rows="2" placeholder="Ej. Deseo degradado bajo o perfilado suave..."></textarea>
+          </div>
 
-          </form>
-        </div>
-
+          <button type="submit" class="btn btn-gold btn-block btn-lg">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>ENVIAR RESERVA POR WHATSAPP (916484051)</span>
+          </button>
+        </form>
       </div>
-
     </div>
   </section>
 
-  <!-- ==================== CONTACTO & UBICACION ==================== -->
-  <section class="contact-section" id="contacto">
+  <!-- ==================== 10. FORMULARIO DE SUSCRIPCIÓN ==================== -->
+  <section class="newsletter-section">
     <div class="container">
-      
-      <div class="section-header">
-        <span class="section-subtitle">Visítanos</span>
-        <h2 class="section-title">UBICACIÓN & <span class="text-gold">HORARIOS</span></h2>
-        <div class="section-divider">
-          <i class="fa-solid fa-crown"></i>
+      <div class="newsletter-card">
+        <div class="newsletter-info">
+          <div class="newsletter-icon">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div class="newsletter-text">
+            <h3>SUSCRÍBETE A NUESTRO BOLETÍN</h3>
+            <p>Recibe promociones exclusivas, novedades y consejos de estilo.</p>
+          </div>
         </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="Tu correo electrónico" required>
+          <button type="submit" class="btn btn-gold btn-subscribe">SUSCRIBIRME</button>
+        </form>
       </div>
-
-      <div class="contact-grid">
-        
-        <div class="contact-card">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">IMPERIAL <span class="text-gold">BARBER SHOP</span></h3>
-          <p class="hero-slogan" style="font-size: 1rem; margin-bottom: 1.5rem;">"TU MEJOR ESTILO CON NOSOTROS"</p>
-
-          <div class="contact-info-list">
-            
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div class="contact-text">
-                <h4>Dirección Principal</h4>
-                <p>Jr. Miguel Grau N° 687, Bagua Grande - Amazonas</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fa-brands fa-whatsapp"></i>
-              </div>
-              <div class="contact-text">
-                <h4>WhatsApp Directo</h4>
-                <p><a href="https://wa.me/51916484051" target="_blank" style="color: var(--gold-light); text-decoration: underline;">+51 916 484 051</a></p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fa-solid fa-clock"></i>
-              </div>
-              <div class="contact-text">
-                <h4>Horario de Atención</h4>
-                <p>Lunes a Sábado: 9:00 AM - 9:00 PM<br>Domingos: 10:00 AM - 6:00 PM</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div style="margin-top: 2rem;">
-            <a href="https://wa.me/51916484051?text=Hola%20Imperial%20Barber%20Shop,%20deseo%20más%20información" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>Enviar Mensaje Directo</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="map-container">
-          <div class="map-placeholder">
-            <i class="fa-solid fa-map-location-dot"></i>
-            <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Encuéntranos en Bagua Grande</h3>
-            <p style="color: var(--text-muted); max-width: 400px; margin-bottom: 1.5rem;">
-              Estamos ubicados estratégicamente en <strong>Jr. Miguel Grau N° 687, Bagua grande - Amazonas</strong>.
-            </p>
-            <a href="https://maps.google.com/?q=Jr.+Miguel+Grau+687+Bagua+Grande+Amazonas" target="_blank" class="btn btn-gold" id="google-maps-btn">
-              <i class="fa-solid fa-compass"></i>
-              <span>Abrir en Google Maps</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
     </div>
   </section>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="footer">
+  <!-- ==================== FOOTER (11, 12, 13, 14, 15, 16) ==================== -->
+  <footer class="main-footer" id="contacto">
     <div class="container">
-      
-      <div class="footer-grid">
+      <div class="footer-top-grid">
         
-        <div class="footer-brand">
+        <!-- 11. LOGO Y DESCRIPCIÓN -->
+        <div class="footer-col footer-col-brand">
           <div class="brand-logo">
-            <div class="crown-icon">
-              <i class="fa-solid fa-crown"></i>
-            </div>
-            <div>
-              <div class="brand-name">IMPERIAL <span class="text-gold">BARBER</span></div>
-              <div class="brand-tag">BAGUA GRANDE</div>
+            <img src="logo.svg" alt="Imperium Barber Shop Logo" class="brand-logo-img">
+            <div class="brand-text-box">
+              <div class="brand-name">IMPERIUM</div>
+              <div class="brand-subtext">— BARBER SHOP —</div>
             </div>
           </div>
-          <p>"TU MEJOR ESTILO CON NOSOTROS"</p>
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem;">
-            Jr. Miguel Grau N° 687, Bagua grande - Amazonas<br>
-            WhatsApp: 916484051
-          </p>
+          <p class="footer-slogan">Estilo, calidad y confianza en cada corte.</p>
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/Imperialbarbersho" target="_blank" rel="noopener noreferrer" title="Facebook" class="social-circle">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-circle">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/51916484051" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="social-circle">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </div>
 
-        <div>
-          <h4 class="footer-title">Navegación</h4>
-          <ul class="footer-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios & Precios</a></li>
-            <li><a href="#galeria">Galería de Estilos</a></li>
-            <li><a href="#barberos">Nuestros Barberos</a></li>
-            <li><a href="#reserva">Agendar Cita</a></li>
+        <!-- 12. ENLACES RÁPIDOS -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">ENLACES RÁPIDOS</h4>
+          <ul class="footer-links-list">
+            <li><a href="#inicio"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+            <li><a href="#nosotros"><i class="fa-solid fa-chevron-right"></i> Nosotros</a></li>
+            <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Servicios</a></li>
+            <li><a href="#galeria"><i class="fa-solid fa-chevron-right"></i> Galería</a></li>
+            <li><a href="#productos"><i class="fa-solid fa-chevron-right"></i> Productos</a></li>
+            <li><a href="#contacto"><i class="fa-solid fa-chevron-right"></i> Contacto</a></li>
           </ul>
         </div>
 
-        <div>
-          <h4 class="footer-title">Servicios</h4>
-          <ul class="footer-links">
-            <li><a href="#servicios">Corte Clásico</a></li>
-            <li><a href="#servicios">Corte + Barba</a></li>
-            <li><a href="#servicios">Barboterapia</a></li>
-            <li><a href="#servicios">Combo Rey Imperial</a></li>
-            <li><a href="#servicios">Camuflaje de Canas</a></li>
+        <!-- 13. INFORMACIÓN DE CONTACTO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">CONTÁCTANOS</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+51 916 484 051</span>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <span>info@imperiumbarbershop.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Jr. San Martín 816 / Jr. Miguel Grau 687, Bagua Grande, Amazonas - Perú</span>
+            </li>
           </ul>
         </div>
 
-        <div>
-          <h4 class="footer-title">Redes & Contacto</h4>
-          <p style="font-size: 0.9rem; margin-bottom: 1rem;">Síguenos en nuestras redes sociales para ver nuestros últimos cortes y promociones.</p>
-          <div class="social-links">
-            <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.me/51916484051" target="_blank" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://tiktok.com" target="_blank" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <!-- 14 & 15. HORARIOS Y MÉTODOS DE PAGO -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">HORARIOS</h4>
+          <div class="footer-hours">
+            <p><strong>Lunes a Sábado:</strong><br> 9:00 a. m. - 8:00 p. m.</p>
+            <p><strong>Domingos:</strong><br> 10:00 a. m. - 6:00 p. m.</p>
+          </div>
+          
+          <h4 class="footer-col-title" style="margin-top: 1.2rem;">ACEPTAMOS</h4>
+          <div class="payment-methods">
+            <span class="pay-badge visa">VISA</span>
+            <span class="pay-badge mastercard">Mastercard</span>
+            <span class="pay-badge yape">yape</span>
+            <span class="pay-badge plin">plin</span>
           </div>
         </div>
 
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 <strong>IMPERIAL BARBER SHOP</strong> - Todos los derechos reservados. Bagua Grande, Amazonas - Perú.</p>
+      <!-- 16. PIE DE PÁGINA LEGAL -->
+      <div class="footer-bottom-legal">
+        <p>© 2026 Imperium Barber Shop. Todos los derechos reservados.</p>
+        <div class="legal-links">
+          <a href="#" id="link-privacy">Política de privacidad</a>
+          <span>|</span>
+          <a href="#" id="link-terms">Términos y condiciones</a>
+        </div>
       </div>
-
     </div>
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/51916484051?text=Hola%20Imperial%20Barber%20Shop,%20quisiera%20agendar%20una%20cita" target="_blank" class="whatsapp-float" id="whatsapp-float-btn" aria-label="Contactar por WhatsApp">
+  <a href="https://wa.me/51916484051?text=Hola%20Imperium%20Barber%20Shop,%20deseo%20agendar%20una%20cita" target="_blank" rel="noopener noreferrer" class="whatsapp-float" id="whatsapp-float-btn" aria-label="Contactar por WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-tooltip">¡Escríbenos al 916484051!</span>
   </a>
+
+  <!-- ==================== MODALS ==================== -->
+  
+  <!-- Video Modal -->
+  <div class="modal-overlay" id="videoModal">
+    <div class="modal-content modal-video-content">
+      <button class="modal-close" id="closeVideoModal">&times;</button>
+      <div class="video-responsive">
+        <iframe id="videoIframe" src="" title="Imperium Barber Shop Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div style="padding: 1rem; text-align: center; background: #12141d; border-top: 1px solid var(--border-subtle);">
+        <a href="https://www.youtube.com/watch?v=jmgT0vpMHGU" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">
+          <i class="fa-brands fa-youtube"></i> ABRIR DIRECTAMENTE EN YOUTUBE
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service Detail Modal -->
+  <div class="modal-overlay" id="serviceModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeServiceModal">&times;</button>
+      <div class="modal-header-gold">
+        <i class="fa-solid fa-crown"></i>
+        <h3 id="modalServiceTitle">Servicio</h3>
+      </div>
+      <div class="modal-body">
+        <div class="modal-price-tag" id="modalServicePrice">S/ 00.00</div>
+        <p id="modalServiceDesc" class="modal-desc">Descripción del servicio</p>
+        <div class="modal-features">
+          <div class="m-feat"><i class="fa-solid fa-circle-check text-gold"></i> Atención VIP sin colas</div>
+          <div class="m-feat"><i class="fa-solid fa-circle-check text-gold"></i> Productos de alta gama</div>
+          <div class="m-feat"><i class="fa-solid fa-circle-check text-gold"></i> Barberos profesionales certificados</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-gold btn-block" id="modalBookBtn">
+          <i class="fa-brands fa-whatsapp"></i> AGENDAR ESTE SERVICIO EN WHATSAPP
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legal Modal -->
+  <div class="modal-overlay" id="legalModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeLegalModal">&times;</button>
+      <h3 id="legalModalTitle" style="color: var(--gold-light); margin-bottom: 1rem; font-family: var(--font-heading);">Información Legal</h3>
+      <div id="legalModalContent" style="color: var(--text-muted); font-size: 0.95rem; max-height: 350px; overflow-y: auto; padding-right: 0.5rem;">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
 
   <!-- Custom JavaScript -->
   <script src="script.js"></script>

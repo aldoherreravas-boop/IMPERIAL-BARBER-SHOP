@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="100%" height="100%">
+  <defs>
+    <!-- Gold Metallic Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bf953f"/>
+      <stop offset="25%" stop-color="#fcf6ba"/>
+      <stop offset="50%" stop-color="#b38728"/>
+      <stop offset="75%" stop-color="#fbf5b7"/>
+      <stop offset="100%" stop-color="#aa771c"/>
+    </linearGradient>
+
+    <!-- Dark Shield Inner Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181a24"/>
+      <stop offset="100%" stop-color="#0a0b10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Crown on top -->
+  <path d="M 60,52 L 72,28 L 88,44 L 100,20 L 112,44 L 128,28 L 140,52 Z" fill="url(#goldGrad)" />
+  <circle cx="72" cy="24" r="4" fill="url(#goldGrad)" />
+  <circle cx="100" cy="16" r="4.5" fill="url(#goldGrad)" />
+  <circle cx="128" cy="24" r="4" fill="url(#goldGrad)" />
+
+  <!-- Outer Shield -->
+  <path d="M 40,55 L 160,55 C 160,145 130,195 100,225 C 70,195 40,145 40,55 Z" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="6" stroke-linejoin="round"/>
+  
+  <!-- Inner Shield Outline -->
+  <path d="M 48,63 L 152,63 C 152,140 125,185 100,213 C 75,185 48,140 48,63 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.8"/>
+
+  <!-- Letter I -->
+  <text x="100" y="152" font-family="'Cinzel', 'Times New Roman', serif" font-size="82" font-weight="900" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="1">I</text>
+
+  <!-- Decorative Stars/Dots -->
+  <circle cx="75" cy="78" r="2.5" fill="url(#goldGrad)"/>
+  <circle cx="125" cy="78" r="2.5" fill="url(#goldGrad)"/>
+  <path d="M 70,180 Q 100,192 130,180" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+</svg>
